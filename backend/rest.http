@@ -1,0 +1,16 @@
+### Get real-time Bitcoin price
+GET http://localhost:5000/api/crypto/real-time/bitcoin HTTP/1.1
+
+### Add a new cryptocurrency
+POST http://localhost:5000/api/crypto
+Content-Type: application/json
+
+{
+    "name": "Bitcoin",
+    "symbol": "BTC",
+    "amount": 2,
+    "price": 50000
+}
+
+###
+GET http://localhost:5000/api/crypto/real-time/bitcoin
